@@ -10,10 +10,10 @@
 
 
 </head>
-<body>
+<body class="container">
 
     <h1 class="mt-5"> 
-        Mini Chat
+        Acceso Denegado
     </h1>
 
     <hr>
@@ -57,10 +57,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.5.4/socket.io.js" integrity="sha512-YeeA/Qxn5hYdkukScTCNNOhTrv1C2RubAGButJ1rmgQwZf/HdRaCGl+JAVkqsqaNRaYNHdheiuKKuPf9mDcqKg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <script>
-        const socket = io('https://react-socket-mxli-23.herokuapp.com/');
+        const socket = io('https://react-socket-mxli-23.herokuapp.com/'); 
 
         // html references, elements del DOM
-        // const formulario = document.getElementById('miformulario');
+        // const formulario = document.getElementById('miformulario'); 
         const formulario = $( "#miformulario" );
         const mensajes = document.getElementById('misMensajes');
         const txtMensaje = document.getElementById('txtMensaje');
@@ -93,21 +93,7 @@
         });
 
 
-        // socket.on('Mensaje-de-Bienvenida', (data) =>{
-        //     console.log(  data); 
-        // });
-
-
-        // setTimeout( () =>{
-
-        //     console.log('Esto !');
-        //     socket.emit('mensaje-cliente', {
-        //         msg:'Hola Servidor !',
-        //         nombre:'Carlos Manriquez'
-        //     })
-
-
-        // } , 2000 );
+       
 
     </script>    
     
